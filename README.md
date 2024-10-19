@@ -1,13 +1,3 @@
-# CheapestTicketHunter
-
-- **DateGenerator**: Uçuş aramalarının yapılacağı tarih listesini oluşturur.
-- **FlightSearcher**: Selenium kullanarak Panflights web sitesinde uçuş araması yapar.
-- **FlightResultCleaner**: Elde edilen uçuş arama sonuçlarını temizler, gereksiz verileri çıkarır ve uçuş verilerini veritabanına kaydetmeye hazır hale getirir.
-- **DataManager**: Eski verileri siler, temizlenmiş verileri veritabanına kaydeder, varış noktalarına ait ortalama fiyatları hesaplayıp veritabanına kaydeder, fiyat kıyaslaması yapar ve tabloda güncelleme yapar, tabloyu Excel dosyasına yazar.
-- **ProcessCoordinator**: Tüm süreci koordine eden ve sınıflar arasındaki iş akışını yöneten ana sınıf.
-
-
-
 ## Nasıl Çalışır:
 - Belirlenen kalkış noktalarından (örn. IST, SAW, ADB gibi havalimanları) 250 gün boyunca uçuş aramaları yapılır.
 - Her gün, her havalimanından o güne ait en uygun uçak biletleri aranır. Örneğin:
